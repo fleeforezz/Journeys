@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(71, 71, 71);
+  border-radius: 16px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a09f89;
+  border-radius: 16px;
+}
+
+body {
+  background-color: #f4f1ee;
+  transition: background-color 0.3s ease;
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0%) scale(3%);
+  }
+
+  50% {
+    transform: translateY(0%);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+
+  100% {
+    transform: translateY(90%) scale(3%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+}
+
+/* .yay {
+  box-shadow: 20px 20px 60px #d9a1a1,
+    -20px -20px 60px #ffd9d9;
+}
+
+.yo:hover {
+  box-shadow: 20px 20px 60px #ee9595,
+    -20px -20px 60px #ffd9d9;
+  transition: 500ms;
+} */
